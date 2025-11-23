@@ -5,9 +5,49 @@
 3. If you don't have it installed already, you can install the STM32 cube IDE and the Cube MX and their installation will automatically initiate installing the necessary drivers.
 4. You can download these Cube IDE through the official STM32 site.
 5. To check whether the DFU driver is intalled successfully or not, connect your STM32 through the USB-C connector and open the device manager on your windows machine.
-6. <img width="340" height="131" alt="image" src="https://github.com/user-attachments/assets/43529b17-515e-4155-b0e0-86102c5b9645" />
-7. You would see under the PORTs section as 'USB Serial Device' and an assigned COM Port to it.
-8. Now press and hold the **boot** button on the board and tap the **nrst (reset)** button.
-9. This should set the board in the DFU mode now.
-10. <img width="276" height="45" alt="image" src="https://github.com/user-attachments/assets/f7bc1a3a-b787-45d3-b806-f79179f74d38" />
-11. It should show up like this.
+6. 
+7. <img width="340" height="131" alt="image" src="https://github.com/user-attachments/assets/43529b17-515e-4155-b0e0-86102c5b9645" />
+
+8. You would see under the PORTs section as 'USB Serial Device' and an assigned COM Port to it.
+9. Now press and hold the **boot** button on the board and tap the **nrst (reset)** button.
+10. This should set the board in the DFU mode now.
+11. 
+12. <img width="276" height="45" alt="image" src="https://github.com/user-attachments/assets/f7bc1a3a-b787-45d3-b806-f79179f74d38" />
+
+13. It should show up like this.
+14. Now open up your VScode and switch to platformIO.
+
+15. <img width="1366" height="728" alt="image" src="https://github.com/user-attachments/assets/46f26715-7c1c-40bb-915e-c05239ecd224" />
+
+16. Make a new project.
+
+17. <img width="1366" height="726" alt="image" src="https://github.com/user-attachments/assets/169a248e-5509-4f5c-a862-fd401839a4dd" />
+
+18. Select your version of the black pill board.
+19. Click finish.
+
+20. In the **platformio.ini** file add this line to enable the serial monitor **monitor_speed = 115200**
+
+21. <img width="943" height="456" alt="image" src="https://github.com/user-attachments/assets/a96a570c-4020-4e77-b119-5534f99cf344" />
+
+22. Add this line to make sure that it uploads using the dfu
+
+23. <img width="1032" height="602" alt="image" src="https://github.com/user-attachments/assets/1445cf5c-fa53-4b63-a6ba-db36a76ec919" />
+
+24. This should do it.
+25. Now open the src section and open the main.cpp
+
+26. <img width="995" height="709" alt="image" src="https://github.com/user-attachments/assets/26cc8954-b16c-4d31-ad60-81add4d6cf4c" />
+
+27. This is where we are supposed to write our arduino code.
+28. Make sure to include the **Arduino.h** , it is needed for compilation
+29. A sample code is provided.
+30. Once done, click the upload button indicated by the right arrow at the bottom left.
+
+31. <img width="1073" height="729" alt="image" src="https://github.com/user-attachments/assets/c530a33d-9464-48ad-921e-b2720f7e7d64" />
+
+32. You will see things compiling and building in the terminal.
+
+33. <img width="1066" height="708" alt="image" src="https://github.com/user-attachments/assets/7cedefa3-0b1c-4dbc-a250-49bce80e5c9e" />
+
+34. 
