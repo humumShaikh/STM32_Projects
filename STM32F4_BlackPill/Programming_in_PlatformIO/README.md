@@ -37,7 +37,7 @@
 24. This should do it.
 25. Now open the src section and open the main.cpp
 
-26. <img width="995" height="709" alt="image" src="https://github.com/user-attachments/assets/26cc8954-b16c-4d31-ad60-81add4d6cf4c" />
+26. <img width="1141" height="583" alt="image" src="https://github.com/user-attachments/assets/9905dcca-b5f4-4e3f-84b6-d1347466b329" />
 
 27. This is where we are supposed to write our arduino code.
 28. Make sure to include the **Arduino.h** , it is needed for compilation
@@ -48,6 +48,4 @@
 
 32. You will see things compiling and building in the terminal.
 
-33. <img width="1066" height="708" alt="image" src="https://github.com/user-attachments/assets/7cedefa3-0b1c-4dbc-a250-49bce80e5c9e" />
-
-34. 
+33. <img width="1070" height="707" alt="image" src="https://github.com/user-attachments/assets/a0593ed2-4aa0-4b70-97a6-d8683300d0db" />
