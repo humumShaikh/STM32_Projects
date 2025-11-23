@@ -28,11 +28,11 @@
 
 20. In the **platformio.ini** file add this line to enable the serial monitor **monitor_speed = 115200**
 
-21. <img width="943" height="456" alt="image" src="https://github.com/user-attachments/assets/a96a570c-4020-4e77-b119-5534f99cf344" />
+21. <img width="872" height="262" alt="image" src="https://github.com/user-attachments/assets/20adaf54-5ed7-4555-a1b3-62f83f1c0c65" />
 
 22. Add this line to make sure that it uploads using the dfu
 
-23. <img width="1032" height="602" alt="image" src="https://github.com/user-attachments/assets/1445cf5c-fa53-4b63-a6ba-db36a76ec919" />
+23. <img width="900" height="403" alt="image" src="https://github.com/user-attachments/assets/e96e0508-f0c0-4d61-9a58-73fb95ddc0d2" />
 
 24. This should do it.
 25. Now open the src section and open the main.cpp
