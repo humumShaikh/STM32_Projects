@@ -50,6 +50,6 @@
 
 33. <img width="1070" height="707" alt="image" src="https://github.com/user-attachments/assets/a0593ed2-4aa0-4b70-97a6-d8683300d0db" />
 
-34. Click this button to open the serial monitor.
+34. Click this button to open the serial monitor. 
 
 35. <img width="884" height="729" alt="image" src="https://github.com/user-attachments/assets/5cab2a4b-8754-4035-af0a-5dd98788c065" />
