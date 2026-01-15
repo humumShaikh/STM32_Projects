@@ -3,7 +3,7 @@
 
 #define OLED_WIDTH 128            //Macros for oled parameters
 #define OLED_HEIGHT 64
-#define OLED_RESET -1
+#define OLED_RESET -1            //-1 if there's no dedicated reset pin on your OLED
 Adafruit_SH1106G oled = Adafruit_SH1106G(OLED_WIDTH, OLED_HEIGHT, &Wire, OLED_RESET);
 
 #define buttonPin PB4
@@ -77,7 +77,7 @@ void drawArrowLeft(){
   oled.fillTriangle(28,35 , 28,55 , 8,45 , SH110X_WHITE);
 }
 
-void UPNRZ(){
+void UPNRZ(){                                      //Unipolar NRZ
   if(digitalRead(inputPin)==HIGH){
     digitalWrite(outputLowPin,LOW);
     digitalWrite(outputHighPin,HIGH);
@@ -88,7 +88,7 @@ void UPNRZ(){
   }
 }
 
-void UPRZ(){
+void UPRZ(){                                      //Unipolar RZ
   if(digitalRead(inputPin)==HIGH){
     digitalWrite(outputLowPin,LOW);
     digitalWrite(outputHighPin,HIGH);
@@ -103,7 +103,7 @@ void UPRZ(){
   }
 }
 
-void BPNRZ(){
+void BPNRZ(){                                    //Bipolar NRZ
   if(digitalRead(inputPin)==HIGH){
     digitalWrite(outputLowPin,LOW);
     digitalWrite(outputHighPin,HIGH);
@@ -114,7 +114,7 @@ void BPNRZ(){
   }
 }
 
-void BPRZ(){
+void BPRZ(){                                    //Bipolar RZ
   if(digitalRead(inputPin)==HIGH){
     digitalWrite(outputLowPin,LOW);
     digitalWrite(outputHighPin,HIGH);
@@ -133,7 +133,7 @@ void BPRZ(){
   }
 }
 
-void AMINRZ(){
+void AMINRZ(){                                  
   if(digitalRead(inputPin)==HIGH){
     if((amiCount%2)==0){
       digitalWrite(outputLowPin,LOW);
@@ -269,3 +269,4 @@ delay(1000);
 
 
 }
+
