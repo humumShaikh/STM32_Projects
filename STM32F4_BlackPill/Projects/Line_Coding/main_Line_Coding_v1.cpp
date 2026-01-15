@@ -135,7 +135,7 @@ void BPRZ(){
   }
 }
 
-void AMINRZ(){
+void AMINRZ(){                                //Alternate Mark Inversion NRZ
   if(digitalRead(inputPin)==HIGH){
     if((amiCount%2)==0){
       digitalWrite(outputLowPin,LOW);
@@ -154,7 +154,7 @@ void AMINRZ(){
   }
 }
 
-void AMIRZ(){
+void AMIRZ(){                                //Alternate Mark Inversion RZ
   if(digitalRead(inputPin)==HIGH){
     if((amiCount%2)==0){
       digitalWrite(outputLowPin,LOW);
@@ -350,4 +350,5 @@ void loop(){
 
 
 }
+
 
