@@ -1,7 +1,7 @@
-#include <Arduino.h>
-#include <Adafruit_SH110X.h>
+#include <Arduino.h>              //Library inclusion if programming via PlatformIO
+#include <Adafruit_SH110X.h>      //1.3" OLED Library by Adafruit
 
-#define OLED_WIDTH 128
+#define OLED_WIDTH 128            //Macros for oled parameters
 #define OLED_HEIGHT 64
 #define OLED_RESET -1
 Adafruit_SH1106G oled = Adafruit_SH1106G(OLED_WIDTH, OLED_HEIGHT, &Wire, OLED_RESET);
@@ -266,5 +266,6 @@ int endTime = micros();
 int totalTime = endTime-currentTime;
 Serial.println(totalTime);
 delay(1000);
+
 
 }
