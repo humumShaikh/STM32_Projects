@@ -3,7 +3,7 @@
 
 #define OLED_WIDTH 128                        
 #define OLED_HEIGHT 64
-#define OLED_RESET -1
+#define OLED_RESET -1                     //OLED_RESET -1 if there is no dedicated reset pin on the OLED you are using
 Adafruit_SH1106G oled = Adafruit_SH1106G(OLED_WIDTH, OLED_HEIGHT, &Wire, OLED_RESET);
 
 #define buttonPin PB4
@@ -350,3 +350,4 @@ void loop(){
 
 
 }
+
