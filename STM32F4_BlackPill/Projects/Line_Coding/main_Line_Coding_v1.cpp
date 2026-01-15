@@ -1,7 +1,7 @@
-#include <Arduino.h>
-#include <Adafruit_SH110X.h>
+#include <Arduino.h>                      //Arduino Library inclusion if coding via PlatformIO
+#include <Adafruit_SH110X.h>              //Library for 1.3" OLED by Adafruit
 
-#define OLED_WIDTH 128
+#define OLED_WIDTH 128                        
 #define OLED_HEIGHT 64
 #define OLED_RESET -1
 Adafruit_SH1106G oled = Adafruit_SH1106G(OLED_WIDTH, OLED_HEIGHT, &Wire, OLED_RESET);
@@ -347,5 +347,6 @@ void loop(){
     oled.display();
     resetChecker();
   }
+
 
 }
