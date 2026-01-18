@@ -250,7 +250,7 @@ void loop(){
     countGiver();
   }
 */
-int currentTime = micros();
+int currentTime = micros();                              //function 'micros()' returns the time passed till now from the most recent boot
   while((selectVal()>=1) && (selectVal()<=1023)){
 /*    oled.setTextSize(2);
     oled.clearDisplay();
@@ -269,4 +269,5 @@ delay(1000);
 
 
 }
+
 
