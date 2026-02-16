@@ -1,6 +1,8 @@
 //CWIR3
 //Written for STM32F411CEU6  Blackpill
 
+#include <Arduino.h>       //comment this line if not using the platformIO IDE
+
 unsigned long currentMillis;
 unsigned long currentMillis2;
 
