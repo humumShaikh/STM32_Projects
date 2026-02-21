@@ -24,7 +24,7 @@ void setup(){
 
 void loop(){
 
-  currentMillis = millis();
+  currentMillis = millis();        //millis function returns the amount of time that has passed since the last time the uc booted
   currentMillis2 = millis();
 
   if(currentMillis-previousMillis>=interval){
