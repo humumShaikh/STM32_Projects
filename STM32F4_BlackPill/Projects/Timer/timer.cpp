@@ -9,7 +9,7 @@ unsigned long currentMillis2;
 unsigned long previousMillis;
 unsigned long previousMillis2;
 
-const long interval = 1000;
+const long interval = 1000;    //delay amount , alias as interval for 1000 miliseconds
 const long interval2 = 2000;
 
 int redLed;
