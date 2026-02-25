@@ -1,5 +1,5 @@
 //CWIR3
-//written for STM32F411CEU6 Blackpill
+//written for STM32F411CEU6 Blackpill and SSD1306 driver based 0.96" i2c OLED
 
 #include<Adafruit_SSD1306.h>
 
