@@ -1,4 +1,5 @@
 //CWIR3
+//written for STM32F411CEU6 Blackpill
 
 #include<Adafruit_SSD1306.h>
 
